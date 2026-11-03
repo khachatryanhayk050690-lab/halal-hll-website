@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071b17">
+  <meta name="description" content="Official information page for HALAL (HLL), a BEP-20 token on BNB Smart Chain. Verify the contract address and learn about the project.">
+  <meta property="og:title" content="HALAL (HLL) — Official Token Website">
+  <meta property="og:description" content="HALAL (HLL) · BNB Smart Chain · 100,000,000 HLL total supply. Verify the official contract address.">
+  <meta property="og:type" content="website">
+  <title>HALAL (HLL) | Official Token Information</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <style>
+    :root { color-scheme: dark; --bg:#071b17; --ink:#f5fff9; --muted:#aec4ba; --line:rgba(237,255,247,.14); --mint:#9df1c5; --gold:#e8c985; --card:#103128; --shadow:0 24px 80px rgba(0,0,0,.25); }
+    * { box-sizing:border-box; }
+    html {scroll-behavior:smooth}
+    body {margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:radial-gradient(ellipse 85% 50% at 78% 0%,rgba(41,133,88,.29),transparent 70%),radial-gradient(ellipse 80% 45% at 0% 55%,rgba(178,147,63,.08),transparent 70%),var(--bg);line-height:1.6}
+    a {color:inherit;text-decoration:none} a:focus-visible,button:focus-visible {outline:3px solid var(--gold);outline-offset:4px}
+    .wrap {width:min(1120px,calc(100% - 40px));margin-inline:auto}
+    .topbar {position:sticky;top:0;z-index:50;backdrop-filter:blur(18px);background:rgba(7,27,23,.87);border-bottom:1px solid var(--line)}
+    .topinner{height:75px;display:flex;justify-content:space-between;align-items:center;gap:15px}
+    .brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.10em;font-size:20px}
+    .brand img{width:40px;height:40px;border-radius:13px}
+    .brand small{display:block;letter-spacing:.12em;color:var(--gold);font-size:9px;line-height:1.2}
+    .topright {display:flex;align-items:center;gap:16px}
+    nav {display:flex;align-items:center;gap:20px;font-size:13px;color:#d9eae0}
+    nav a:hover{color:var(--mint)}
+    .lang{display:flex;gap:3px;padding:4px;border:1px solid var(--line);border-radius:999px}
+    .lang button{background:transparent;border:0;color:var(--muted);padding:6px 10px;border-radius:999px;font-weight:750;cursor:pointer}
+    .lang button.active{background:#245d48;color:white}
+    .hero{min-height:660px;display:grid;grid-template-columns:1.13fr .87fr;align-items:center;gap:7%;padding:74px 0 80px}
+    .eyebrow{font-size:12px;letter-spacing:.18em;font-weight:800;color:var(--gold);text-transform:uppercase;display:flex;gap:10px;align-items:center}
+    .eyebrow::before{content:"";display:inline-block;width:26px;height:1px;background:var(--gold)}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(58px,8vw,104px);line-height:1.02;letter-spacing:-.058em;margin:20px 0 5px;font-weight:800}
+    .hero-ar{font-size:clamp(30px,4vw,50px);font-weight:650;color:var(--gold);margin:0 0 21px;letter-spacing:0;line-height:1.5}
+    .lead{max-width:520px;color:#c4d9ce;font-size:clamp(16px,1.8vw,19px);line-height:1.8;margin-bottom:30px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:13px;padding:14px 20px;font-weight:750;font-size:14px;min-height:51px;transition:transform .2s ease,background .2s ease;cursor:pointer}
+    .btn:hover{transform:translateY(-2px)}
+    .btn.primary{background:linear-gradient(130deg,#bff5ce,#71dba4);color:#062619;border:1px solid #cdfbd8}
+    .btn.secondary{border:1px solid rgba(223,249,232,.27);color:#ecfff3;background:rgba(255,255,255,.045)}
+    .hero-visual{position:relative;display:grid;place-items:center;min-height:440px;isolation:isolate}
+    .hero-visual::before{content:"";position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle,rgba(137,222,161,.24),rgba(6,29,23,0) 70%);filter:blur(15px);z-index:-1}
+    .orbit{width:min(390px,90%);aspect-ratio:1;border:1px solid rgba(210,238,210,.14);border-radius:50%;display:grid;place-items:center;box-shadow:0 0 0 42px rgba(218,251,227,.018),0 0 0 85px rgba(218,251,227,.014)}
+    .medallion{width:78%;aspect-ratio:1;border-radius:50%;position:relative;display:flex;align-items:center;flex-direction:column;justify-content:center;background:radial-gradient(circle at 33% 24%,#245e44,#0b2d25 64%,#061b16);border:2px solid #a5b779;box-shadow:inset 0 0 0 9px rgba(8,32,25,.85),inset 0 0 0 10px rgba(217,191,107,.53),0 26px 60px rgba(0,0,0,.4)}
+    .medallion strong{font-size:clamp(58px,8vw,84px);line-height:1.1;letter-spacing:-.07em;font-weight:850;color:#e7ffe8}
+    .medallion span{color:#ebd09c;font-size:26px;line-height:1.7;letter-spacing:0}
+    .medallion em{color:#a8dec1;font-style:normal;font-size:10px;letter-spacing:.25em;margin-top:6px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:98px}
+    .stat{padding:24px 25px;border-radius:17px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(31,84,62,.54),rgba(10,40,31,.6))}
+    .stat label{display:block;color:var(--muted);font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:750;margin-bottom:8px}
+    .stat b{font-size:clamp(18px,2.8vw,26px);font-weight:760;white-space:nowrap}
+    section.block{padding:14px 0 80px}
+    .section-head{max-width:730px;margin-bottom:30px}
+    .section-head h2{font-size:clamp(30px,5vw,47px);line-height:1.12;letter-spacing:-.04em;margin:15px 0 12px}
+    .section-head p{color:var(--muted);font-size:16px;line-height:1.75}
+    .panels{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .panel{border:1px solid var(--line);border-radius:21px;background:rgba(13,46,35,.8);padding:30px;min-width:0}
+    .panel .mini{color:var(--gold);font-size:12px;letter-spacing:.12em;font-weight:800;text-transform:uppercase}
+    .panel h3{font-size:22px;line-height:1.3;margin:13px 0 12px}
+    .panel p{font-size:15px;color:var(--muted);line-height:1.78;margin-bottom:0}
+    .address-box{margin-top:22px;border:1px solid rgba(228,255,240,.18);border-radius:17px;background:#081f1a;padding:17px;display:flex;align-items:center;gap:12px;justify-content:space-between}
+    .address-box code{font-size:12px;line-height:1.9;color:#d7fae2;overflow-wrap:anywhere;word-break:break-all}
+    .copybtn{border:1px solid rgba(200,255,217,.35);background:#194535;color:#d2f9e3;border-radius:11px;min-width:45px;min-height:42px;padding:8px 12px;cursor:pointer;font-weight:750}
+    .note{margin-top:14px;color:#9fb6ac;font-size:12px}
+    .values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .value{padding:26px;border:1px solid var(--line);border-radius:18px;background:rgba(11,42,31,.55)}
+    .value .num{display:inline-flex;align-items:center;justify-content:center;width:35px;height:35px;border-radius:11px;background:rgba(160,220,175,.13);color:var(--gold);font-size:12px;font-weight:800;margin-bottom:18px}
+    .value h3{font-size:18px;margin:0 0 8px}.value p{font-size:14px;color:var(--muted);margin:0}
+    .notice{margin-top:24px;padding:21px 24px;border:1px solid rgba(230,199,117,.25);background:rgba(196,161,76,.065);border-radius:16px;color:#e6d8b2;font-size:14px;line-height:1.75}
+    footer{border-top:1px solid var(--line);padding:35px 0 45px;color:var(--muted);font-size:13px}
+    .footerrow{display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}
+    .footerrow strong{color:#eefff4;letter-spacing:.08em}
+    .footerrow a{text-decoration:underline;text-decoration-color:rgba(162,223,181,.4);text-underline-offset:4px}
+    .footerrow a:hover{color:var(--mint)}
+    [dir="rtl"] .eyebrow{letter-spacing:0;text-transform:none}[dir="rtl"] .eyebrow::before{display:none}
+    @media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;min-height:unset;gap:6px;padding:58px 0 60px}.hero-visual{min-height:340px;order:-1}.orbit{width:295px}.medallion strong{font-size:67px}.stats{margin-bottom:65px}.panels{grid-template-columns:1fr}.values{grid-template-columns:1fr}.section-head{margin-bottom:24px}}
+    @media(max-width:500px){.wrap{width:min(100% - 32px,1120px)}.topinner{height:66px}.brand{font-size:18px}.brand img{width:35px;height:35px}.hero-visual{min-height:320px}.orbit{width:265px}.hero{padding:31px 0 55px}.hero h1{font-size:64px}.hero-ar{font-size:34px}.stats{grid-template-columns:1fr;gap:10px}.stat{padding:16px 19px}.panel{padding:21px}.address-box{align-items:start}.copybtn{flex-shrink:0}section.block{padding:8px 0 55px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+  </style>
+</head>
+<body>
+<header class="topbar"><div class="wrap topinner">
+  <a href="#home" class="brand" aria-label="HALAL home"><img src="logo.svg" alt="HALAL logo"><span>HALAL<small>HLL TOKEN</small></span></a>
+  <div class="topright"><nav aria-label="Navigation"><a href="#about" data-i18n="navAbout">About</a><a href="#details" data-i18n="navDetails">Token details</a><a href="#contact" data-i18n="navContact">Contact</a></nav>
+    <div class="lang" role="group" aria-label="Select language"><button id="en" class="active" type="button" aria-pressed="true">EN</button><button id="ar" type="button" aria-pressed="false">عربي</button></div>
+  </div>
+</div></header>
+<main id="home" class="wrap">
+  <div class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow" data-i18n="eyebrow">BNB Smart Chain · BEP-20</div>
+      <h1>HALAL<span style="color:var(--gold)">.</span></h1>
+      <p class="hero-ar" lang="ar">حلال <span style="font-size:.48em;font-family:inherit;vertical-align:middle;color:#bed9ca">/ HLL</span></p>
+      <p class="lead" data-i18n="lead">An independent BEP-20 token project on BNB Smart Chain. Explore the published token information and verify the contract directly on-chain.</p>
+      <div class="cta"><a class="btn primary" href="https://bscscan.com/token/0xE697a63cDf55A6416F37408801c33E9C84D4ED18" target="_blank" rel="noopener noreferrer" data-i18n="explore">View on BscScan ↗</a><a class="btn secondary" href="#details" data-i18n="detailsButton">Token details ↓</a></div>
+    </div>
+    <div class="hero-visual" aria-label="HALAL token emblem"><div class="orbit"><div class="medallion"><strong>HLL</strong><span lang="ar">حلال</span><em>BNB SMART CHAIN</em></div></div></div>
+  </div>
+  <div class="stats" id="details" aria-label="Token statistics">
+    <div class="stat"><label data-i18n="supplyLabel">Maximum total supply</label><b>100,000,000 HLL</b></div>
+    <div class="stat"><label data-i18n="networkLabel">Network</label><b>BNB Smart Chain</b></div>
+    <div class="stat"><label data-i18n="standardLabel">Token standard</label><b>BEP-20 · 18 decimals</b></div>
+  </div>
+  <section class="block" id="about"><div class="section-head"><div class="eyebrow" data-i18n="intro">PROJECT OVERVIEW</div><h2 data-i18n="aboutTitle">Built for transparency.</h2><p data-i18n="aboutText">HALAL (HLL) is a token on BNB Smart Chain. This site provides the project's public reference information. Its name does not represent a claim of religious certification, exchange listing, or financial return.</p></div>
+    <div class="panels"><article class="panel"><div class="mini" data-i18n="onchain">ON-CHAIN REFERENCE</div><h3 data-i18n="contractTitle">Verified contract address</h3><p data-i18n="contractText">Always compare the complete address with the listing on BscScan before interacting with any token.</p><div class="address-box"><code id="contract">0xE697a63cDf55A6416F37408801c33E9C84D4ED18</code><button type="button" id="copy" class="copybtn" aria-label="Copy contract address" data-i18n="copy">Copy</button></div><p class="note" id="copyfeedback" aria-live="polite" data-i18n="copyNote">This is a public smart-contract address, not a wallet recovery phrase.</p></article>
+      <article class="panel"><div class="mini" data-i18n="facts">TOKEN FACTS</div><h3 data-i18n="factsTitle">HALAL · HLL</h3><p data-i18n="factsText">Token name: HALAL. Symbol: HLL. Maximum total supply: 100,000,000 HLL. Blockchain: BNB Smart Chain (BEP-20). Decimals: 18.</p><p style="margin-top:15px"><a style="color:var(--mint);text-decoration:underline;text-underline-offset:4px" href="https://bscscan.com/token/0xE697a63cDf55A6416F37408801c33E9C84D4ED18" target="_blank" rel="noopener noreferrer" data-i18n="check">Check details on BscScan ↗</a></p></article>
+    </div>
+  </section>
+  <section class="block"><div class="section-head"><div class="eyebrow" data-i18n="commitment">OUR APPROACH</div><h2 data-i18n="approachTitle">Clear information. Careful decisions.</h2></div><div class="values">
+    <article class="value"><span class="num">01</span><h3 data-i18n="value1Title">Public details</h3><p data-i18n="value1Text">The contract address and basic token parameters are shared publicly.</p></article>
+    <article class="value"><span class="num">02</span><h3 data-i18n="value2Title">Independent verification</h3><p data-i18n="value2Text">Always use a trusted blockchain explorer to review token information.</p></article>
+    <article class="value"><span class="num">03</span><h3 data-i18n="value3Title">Responsible communication</h3><p data-i18n="value3Text">No guaranteed profits, unsupported exchange claims, or misleading representations.</p></article>
+  </div>
+  <div class="notice" data-i18n="risk">Important: Digital assets involve risk. This website is for project information only and is not financial advice. The token name does not establish religious approval or certification.</div>
+  </section>
+  <section class="block" id="contact"><div class="section-head"><div class="eyebrow" data-i18n="contacts">CONTACT</div><h2 data-i18n="contactTitle">Project contact</h2><p data-i18n="contactText">An official project email address will be published here before submitting token profile details for review. Until then, please use the on-chain contract link for independent verification.</p></div><a class="btn secondary" href="https://bscscan.com/token/0xE697a63cDf55A6416F37408801c33E9C84D4ED18" target="_blank" rel="noopener noreferrer" data-i18n="viewExplorer">Open blockchain explorer ↗</a></section>
+</main>
+<footer><div class="wrap footerrow"><div><strong>HALAL (HLL)</strong> <span data-i18n="foot">· Information website · BNB Smart Chain</span></div><div>© <span id="year">2026</span> HALAL (HLL) · <a href="https://bscscan.com/token/0xE697a63cDf55A6416F37408801c33E9C84D4ED18" target="_blank" rel="noopener noreferrer">BscScan ↗</a></div></div></footer>
+<script>
+(()=>{
+ const t={
+  en:{navAbout:'About',navDetails:'Token details',navContact:'Contact',eyebrow:'BNB Smart Chain · BEP-20',lead:'An independent BEP-20 token project on BNB Smart Chain. Explore the published token information and verify the contract directly on-chain.',explore:'View on BscScan ↗',detailsButton:'Token details ↓',supplyLabel:'Maximum total supply',networkLabel:'Network',standardLabel:'Token standard',intro:'PROJECT OVERVIEW',aboutTitle:'Built for transparency.',aboutText:'HALAL (HLL) is a token on BNB Smart Chain. This site provides the project’s public reference information. Its name does not represent a claim of religious certification, exchange listing, or financial return.',onchain:'ON-CHAIN REFERENCE',contractTitle:'Verified contract address',contractText:'Always compare the complete address with the listing on BscScan before interacting with any token.',copy:'Copy',copied:'Copied ✓',copyNote:'This is a public smart-contract address, not a wallet recovery phrase.',facts:'TOKEN FACTS',factsTitle:'HALAL · HLL',factsText:'Token name: HALAL. Symbol: HLL. Maximum total supply: 100,000,000 HLL. Blockchain: BNB Smart Chain (BEP-20). Decimals: 18.',check:'Check details on BscScan ↗',commitment:'OUR APPROACH',approachTitle:'Clear information. Careful decisions.',value1Title:'Public details',value1Text:'The contract address and basic token parameters are shared publicly.',value2Title:'Independent verification',value2Text:'Always use a trusted blockchain explorer to review token information.',value3Title:'Responsible communication',value3Text:'No guaranteed profits, unsupported exchange claims, or misleading representations.',risk:'Important: Digital assets involve risk. This website is for project information only and is not financial advice. The token name does not establish religious approval or certification.',contacts:'CONTACT',contactTitle:'Project contact',contactText:'An official project email address will be published here before submitting token profile details for review. Until then, please use the on-chain contract link for independent verification.',viewExplorer:'Open blockchain explorer ↗',foot:'· Information website · BNB Smart Chain'},
+  ar:{navAbout:'عن المشروع',navDetails:'تفاصيل الرمز',navContact:'التواصل',eyebrow:'سلسلة BNB الذكية · BEP-20',lead:'مشروع رمز رقمي مستقل من معيار BEP-20 على سلسلة BNB الذكية. تعرف على المعلومات المنشورة وتحقق من العقد مباشرة عبر البلوكشين.',explore:'عرض على BscScan ↗',detailsButton:'تفاصيل الرمز ↓',supplyLabel:'إجمالي الحد الأقصى للمعروض',networkLabel:'الشبكة',standardLabel:'معيار الرمز',intro:'نظرة عامة',aboutTitle:'معلومات واضحة وقابلة للتحقق.',aboutText:'HALAL (HLL) رمز رقمي على سلسلة BNB الذكية. يقدم هذا الموقع معلومات عامة عن المشروع. الاسم لا يعني وجود شهادة امتثال ديني أو إدراج في منصات التداول أو ضمان عوائد مالية.',onchain:'مرجع على البلوكشين',contractTitle:'عنوان العقد المعتمد',contractText:'قارن دائماً العنوان الكامل بالمعلومات الموجودة على BscScan قبل التعامل مع أي رمز.',copy:'نسخ',copied:'تم النسخ ✓',copyNote:'هذا عنوان عقد ذكي عام وليس عبارة استرداد المحفظة.',facts:'معلومات الرمز',factsTitle:'HALAL · HLL',factsText:'اسم الرمز: HALAL. الرمز المختصر: HLL. إجمالي الحد الأقصى للمعروض: 100,000,000 HLL. الشبكة: BNB Smart Chain (BEP-20). المنازل العشرية: 18.',check:'تحقق عبر BscScan ↗',commitment:'نهجنا',approachTitle:'معلومات واضحة وقرارات واعية.',value1Title:'بيانات عامة',value1Text:'يتم نشر عنوان العقد والمعلمات الأساسية للرمز بشكل واضح.',value2Title:'تحقق مستقل',value2Text:'استخدم مستكشف بلوكشين موثوقاً لمراجعة بيانات الرمز.',value3Title:'تواصل مسؤول',value3Text:'دون وعود بأرباح مضمونة أو ادعاءات إدراج غير مؤكدة أو معلومات مضللة.',risk:'مهم: الأصول الرقمية تنطوي على مخاطر. هذا الموقع للمعلومات فقط وليس نصيحة مالية. اسم الرمز لا يعني اعتماداً أو شهادة دينية.',contacts:'التواصل',contactTitle:'التواصل مع المشروع',contactText:'سيُنشَر بريد إلكتروني رسمي للمشروع هنا قبل تقديم بيانات الرمز للمراجعة. في الوقت الحالي استخدم رابط العقد على البلوكشين للتحقق المستقل.',viewExplorer:'افتح مستكشف البلوكشين ↗',foot:'· موقع معلوماتي · سلسلة BNB الذكية'}
+ };
+ const buttons={en:document.getElementById('en'),ar:document.getElementById('ar')};
+ let current='en';
+ function setLang(lang){current=lang;document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.getAttribute('data-i18n');if(t[lang][key])el.textContent=t[lang][key]});Object.entries(buttons).forEach(([k,b])=>{b.classList.toggle('active',k===lang);b.setAttribute('aria-pressed',String(k===lang))});}
+ buttons.en.addEventListener('click',()=>setLang('en'));buttons.ar.addEventListener('click',()=>setLang('ar'));
+ document.getElementById('year').textContent=new Date().getFullYear();
+ const copy=document.getElementById('copy');copy.addEventListener('click',async()=>{const address=document.getElementById('contract').textContent.trim();try{await navigator.clipboard.writeText(address);copy.textContent=t[current].copied;}catch(e){const range=document.createRange();range.selectNodeContents(document.getElementById('contract'));const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);copy.textContent=t[current].copy; } });
+})();
+</script>
+</body></html>
